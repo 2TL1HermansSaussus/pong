@@ -27,9 +27,9 @@ public class Raquette extends JPanel{
 	public void setvitBas(int vitBas) {this.vitBas = vitBas;}
 
 	public boolean isflagHaut() {return flagHaut;}
-	public void setflagHaut(boolean flagHaut) {this.flagHaut = flagHaut;}
+	public void setflagHaut(boolean flagH) {flagHaut = flagH;}
 	public boolean isflagBas() {return flagBas;}
-	public void setflagBas(boolean flagBas) {this.flagBas = flagBas;}
+	public void setflagBas(boolean flagB) {flagBas = flagB;}
 	Thread sincro;
 
 	// Largeur, hauteur, posX, posY, vitBas, vitHaut)

@@ -20,9 +20,9 @@ public class PanelPong extends JPanel implements Runnable {
 	
 	Thread sincro;
 
-	Balle Balle1 = new Balle(largballe,HautBalle,PosInitBalleX,PosInitBalleY,VitDroite,VitGauche,VitHaut,VitBas);
-	Raquette Raquette1 = new Raquette(largeurRaquette,HauteurRaquette, PosInitR1X,PosInitR1Y,VitBas,VitHaut);
-	Raquette Raquette2 = new Raquette(largeurRaquette, HauteurRaquette, PosInitR2X, PosInitR2Y,VitBas,VitHaut);
+	Balle Balle1 = new Balle(largballe, HautBalle, PosInitBalleX, PosInitBalleY, VitDroite, VitGauche, VitHaut, VitBas);
+	Raquette Raquette1 = new Raquette(largeurRaquette, HauteurRaquette, PosInitR1X, PosInitR1Y, VitBas, VitHaut);
+	Raquette Raquette2 = new Raquette(largeurRaquette, HauteurRaquette, PosInitR2X, PosInitR2Y, VitBas, VitHaut);
 	
 	//boolean joueur1FlagHaut,player1FlagBas, joueur2FlagHaut, player2FlagAba;
 	boolean jeux, gameOver;
@@ -40,7 +40,8 @@ public class PanelPong extends JPanel implements Runnable {
 
 		gc.setColor(Color.black); // Couleur des composants
 
-		gc.fillOval(Balle1.getposX(), Balle1.getposY(), Balle1.getlargeur(), Balle1.gethauteur()); // Taille de la balle
+		// Graphique de la balle
+		gc.fillOval(Balle1.getposX(), Balle1.getposY(), Balle1.getlargeur(), Balle1.gethauteur());
 
 		// Graphique de la raquette
 		gc.fillRect(Raquette1.getposX(), Raquette1.getposY(), Raquette1.getlargeur(), Raquette1.gethauteur());
